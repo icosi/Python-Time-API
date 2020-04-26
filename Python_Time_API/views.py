@@ -1,6 +1,6 @@
 from datetime import datetime
-from django.http import JsonResponse
+from django.http import HttpResponse
 
 
 def time(request):
-    return JsonResponse({"time": datetime.utcnow()})
+    return HttpResponse(datetime.utcnow())
